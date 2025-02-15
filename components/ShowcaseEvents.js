@@ -27,22 +27,22 @@ function ShowcaseEvents() {
 
   return (
     <div className="bg-[#141B22] h-full w-full relative">
-        <img src="/gradient-bg.svg" alt="" className="w-1/2 blur-lg absolute" />
-        <div className="flex flex-col justify-center items-center px-28 py-16 text-white">
+        <img src="/gradient-bg.svg" alt="" className="-left-64 top-0 w-4/5 blur-lg absolute" />
+        <div className="flex flex-col justify-center items-center px-28 py-16 text-white min-[320px]:px-5 xl:px-28">
 
-        <h5 className="text-3xl font-semibold">Documents: Whitepaper & Pitch Deck</h5>
-        <p className="text-center w-2/3 text-sm mt-5 mb-20 font-poppins">Blackrose Club targets the most active and technology savvy target group in the DACH region and will later expand to serve the global market.Blackrose Club targets the most active and technology savvy target group in the DACH region and will later expand to serve the global market.</p>
-        <div className="flex justify-center gap-10">
+        <h5 className="text-3xl font-semibold min-[320px]:text-2xl min-[320px]:text-center xl:text-3xl">Documents: Whitepaper & Pitch Deck</h5>
+        <p className="text-center w-2/3 text-sm mt-5 mb-20 font-poppins min-[320px]:text-xs min-[320px]:w-full min-[320px]:mb-10 md:w-3/4 xl:text-sm xl:w-2/3">Blackrose Club targets the most active and technology savvy target group in the DACH region and will later expand to serve the global market.Blackrose Club targets the most active and technology savvy target group in the DACH region and will later expand to serve the global market.</p>
+        <div className="flex justify-center gap-10 min-[320px]:block md:flex md:gap-3 xl:gap-10">
 
           {
             article.map((article, index)=>{
               return (
-                <div key={index} className="card rounded-2xl overflow-hidden bg-[#10171C] w-1/2">
-                  <img src={article.img} alt={article.title} className="h-1/2 w-full object-cover"/>
+                <div key={index} className="card rounded-2xl overflow-hidden  bg-[#10171C] w-1/2 min-[320px]:w-full min-[320px]:mb-6 xl:mb-0">
+                  <img src={article.img} alt={article.title} className="h-1/2 w-full object-cover md:h-2/5 lg:h-1/2"/>
                   <div className="p-4">
 
                   <span className="bg-[#283032] px-10 rounded-md "></span>
-                  <h6 className="text-xl font-semibold mt-1">{article.title}</h6>
+                  <h6 className="text-xl font-semibold mt-1 md:text-lg xl:text-xl">{article.title}</h6>
                   <p className="font-poppins text-[#B6B6B6] text-xs my-2">{article.content}</p>
                   </div>
                 </div>
@@ -53,13 +53,13 @@ function ShowcaseEvents() {
                 
 
         </div>  
-        <div className="mx-auto w-full h-[0.5px] my-16 bg-[#888B8D]"></div>
+        <div className="mx-auto w-full h-[0.5px] my-16 bg-[#888B8D] min-[320px]:my-10 xl:my-16"></div>
         <div className="text-center">
-          <h5 className="font-semibold text-3xl">Stay Updated with us</h5>
-          <p className="font-poppins mt-5 mb-8 text-sm">Blackrose Club targets the most active and technology savvy target group in the DACH region and will later</p>
-          <div className="border border-[#FFFFFF66]  bg-[#292E33] rounded-full flex justify-between items-center">
-            <input type="email" placeholder="Enter email address to subscribe our newsletter" className="w-full h-full bg-transparent py-4 px-8 border-none outline-none" />
-            <button className=" mr-1 bg-[#5bff6d] py-3 px-6 rounded-full text-sm text-black font-bold tracking-wide">
+          <h5 className="font-semibold text-3xl min-[320px]:text-2xl xl:text-3xl">Stay Updated with us</h5>
+          <p className="font-poppins mt-5 mb-8 text-sm min-[320px]:text-xs xl:text-sm">Blackrose Club targets the most active and technology savvy target group in the DACH region and will later</p>
+          <div className="border border-[#ffffff38]  bg-[#292E33] rounded-full flex justify-between items-center">
+            <input type="email" placeholder="Enter email address to subscribe our newsletter" className="w-full h-full bg-transparent py-4 px-8 border-none outline-none min-[320px]:py-3 min-[320px]:px-4 placeholder:text-xs md:placeholder:text-base xl:px-8 xl:py-4" />
+            <button className=" mr-1 bg-[#5bff6d] py-3 px-6 rounded-full text-sm text-black font-bold tracking-wide min-[320px]:text-xs min-[320px]:px-3 min-[320px]:py-2 xl:py-3 xl:px-6 xl:text-sm">
             Subscribe
             </button>
           </div>
