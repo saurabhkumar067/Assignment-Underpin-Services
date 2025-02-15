@@ -11,7 +11,7 @@ function Testimonial() {
   
     
     <div className="relative z-10 text-white  h-full pt-10 px-32 text-center min-[320px]:px-5">
-    <img src="/gradient-bg.svg" alt="" className=" blur-lg absolute left-16" />
+    <Image src="/gradient-bg.svg" alt="picture" width={1000} height={500} className=" blur-lg absolute left-16" />
       <h5 className="text-4xl font-caudex font-bold min-[320px]:text-2xl md:text-3xl xl:text-4xl">
       Team Members
       </h5>

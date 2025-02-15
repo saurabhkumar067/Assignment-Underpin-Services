@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react'
+import Image from 'next/image';
 
 function ShowcaseEvents() {
 
@@ -27,7 +29,7 @@ function ShowcaseEvents() {
 
   return (
     <div className="bg-[#141B22] h-full w-full relative">
-        <img src="/gradient-bg.svg" alt="" className="-left-64 top-0 w-4/5 blur-lg absolute" />
+        <Image src="/gradient-bg.svg" alt="picture" width={100} height={100} className="-left-64 top-0 w-4/5 blur-lg absolute" />
         <div className="flex flex-col justify-center items-center px-28 py-16 text-white min-[320px]:px-5 xl:px-28">
 
         <h5 className="text-3xl font-semibold min-[320px]:text-2xl min-[320px]:text-center xl:text-3xl">Documents: Whitepaper & Pitch Deck</h5>
@@ -38,7 +40,7 @@ function ShowcaseEvents() {
             article.map((article, index)=>{
               return (
                 <div key={index} className="card rounded-2xl overflow-hidden  bg-[#10171C] w-1/2 min-[320px]:w-full min-[320px]:mb-6 xl:mb-0">
-                  <img src={article.img} alt={article.title} className="h-1/2 w-full object-cover md:h-2/5 lg:h-1/2"/>
+                  <img src={article.img} alt={article.title}  className="h-1/2 w-full object-cover md:h-2/5 lg:h-1/2"/>
                   <div className="p-4">
 
                   <span className="bg-[#283032] px-10 rounded-md "></span>

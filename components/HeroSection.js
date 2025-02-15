@@ -1,4 +1,5 @@
 
+import Image from 'next/image';
 import React from 'react'
 import { GoArrowRight } from "react-icons/go";
 
@@ -6,7 +7,7 @@ function HeroSection() {
   return (
     <div className="bg-[#12181E] h-full w-full bg-no-repeat bg-center relative ">
         <div className="flex justify-center flex-col items-center  h-[90vh] w-full  min-[320px]:h-[80vh] md:h-[90vh]">
-      <img src="/gradient-bg.svg" alt="" className="w-2/3 left-[20%] rounded-[30%]  blur-lg absolute min-[320px]:top-0 min-[320px]:w-2/3 min-[320px]:left-16 md:left-[20%]" />
+      <Image src="/gradient-bg.svg" alt="picture" width={100} height={100} className="w-2/3 left-[20%] rounded-[30%]  blur-lg absolute min-[320px]:top-0 min-[320px]:w-2/3 min-[320px]:left-16 md:left-[20%]" />
           <h1 className="text-6xl flex flex-col text-white items-center justify-center font-semibold font-caudex min-[320px]:text-3xl  min-[320px]:text-center md:text-4xl lg:text-5xl xl:text-6xl">
             <span>Seize Early</span>
             <span>

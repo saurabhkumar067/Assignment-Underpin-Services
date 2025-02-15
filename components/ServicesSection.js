@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react'
 
 function ServicesSection() {
@@ -46,15 +47,15 @@ function ServicesSection() {
           <button className=" text-black bg-[#5bff6d] py-2 px-6 rounded-full text-sm font-bold tracking-wide min-[320px]:text-xs min-[320px]:px-5 xl:py-2 xl:px-6 xl:text-sm">
             Explore Services
           </button>
-          <img src="/path.svg" alt="" className="absolute left-0 w-2/5 min-[320px]:hidden md:block" />
-          <img src="/gradient-bg.svg" alt="" className="w-2/3 left-0 top-28 rounded-full blur-lg absolute min-[320px]:top-0 min-[320px]:w-full min-[320px]:-left-20" />
+          <Image src="/path.svg" alt="picture" width={100} height={100} className="absolute left-0 w-2/5 min-[320px]:hidden md:block" />
+          <Image src="/gradient-bg.svg" alt="picture" width={100} height={100} className="w-2/3 left-0 top-28 rounded-full blur-lg absolute min-[320px]:top-0 min-[320px]:w-full min-[320px]:-left-20" />
         </div>
         <div className="w-2/5 text-white min-[320px]:w-full min-[320px]:mt-5 md:mt-0 lg:w-2/3 ">
           <ul>
             {services.map((service, index) => {
               return (
               <li key={index} className="flex justify-between mb-7 items-start gap-3 bg-[#D9D9D905] rounded-lg px-4 py-6 min-[320px]:py-4">
-                <img src={service.img} alt={service.title} className="w-[12%]" />
+                <Image src={service.img} alt={service.title}  width={100} height={100} className="w-[12%]" />
                 <div>
                   <h5 className="font-caudex text-xl min-[320px]:text-lg">{service.title}</h5>
                   <p className="font-poppins mt-1 text-sm min-[320px]:text-xs">

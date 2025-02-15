@@ -6,7 +6,7 @@ function Footer() {
     <footer className="bg-[#000000] h-full w-full text-white ">
       <div className="flex justify-center gap-20 px-24 py-16 min-[320px]:px-5 min-[320px]:block min-[320px]:py-10 lg:flex lg:px-20 xl:px-24 xl:py-16">
         <div className=" w-1/2 min-[320px]:w-full">
-          <img src="/footer-logo.svg" alt="" className="min-[320px]:w-2/3" />
+          <Image src="/footer-logo.svg" alt="picture" width={100} height={100} className="min-[320px]:w-2/3" />
           <p className="font-poppins text-sm text-[#FFFFFF] my-8 min-[320px]:my-4 min-[320px]:text-xs xl:text-sm xl:my-8">
             Blackrose Club targets the most active and technology savvy target
             group in the DACH region and will later expand to serve the global
